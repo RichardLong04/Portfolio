@@ -1,0 +1,658 @@
+* {
+  box-sizing: border-box;
+}
+
+
+header {
+
+  width: 100%;
+  background: url("../images/seamless_paper_texture.png");
+  position: fixed;
+  top: 0;
+
+
+  overflow: hidden;
+
+  text-align:center;
+
+}
+
+.name {
+  padding-top:10px;
+  margin: 0 43%;
+}
+
+nav {
+  margin: 20px auto 25px auto;
+  max-width: 700px;
+  width: 95%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+}
+
+li a {
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+  color: #141414;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.menu li a:hover {
+  color: firebrick;
+  transition-duration: 0.5s;
+  text-shadow: 0px 0px 0px firebrick,
+  0px 14px 10px rgba(0, 0, 0, 0.15),
+  0px 24px 2px rgba(0, 0, 0, 0.1),
+  0px 34px 30px rgba(0, 0, 0, 0.1);
+
+}
+
+#checkbox,
+.toggle {
+  display: none;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  max-width: 700px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center;
+  list-style-type: none;
+  background-color: none;
+  border-radius: 2px;
+}
+
+.home-out {
+background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
+  
+  width: 100%;
+
+}
+
+.home-in {
+  width: 60%;
+  margin: auto;
+  text-align: left;
+  padding-top: 0px;
+}
+
+.heading {
+  padding-bottom: 20px;
+  text-align: left;
+  padding-top:60px;
+
+
+}
+
+ h1 {
+  color: #141414;
+  text-shadow: 1px 1px 2px whitesmoke;
+  text-transform: none;
+  padding-left: 50px;
+ 
+
+
+
+}
+
+.sub-heading h2 {
+  padding-left: 50px;
+  color: #141414;
+  text-shadow: 1px 1px 2px whitesmoke;
+  text-transform: lowercase;
+  animation: slide 1.4s ease-in;
+
+}
+
+.sub-heading {
+  
+  animation: slide 1.5s ease-in;
+  border-left: 2px solid #b22222;
+  margin-bottom: 140px;
+
+}
+
+@keyframes rise {
+  0% {
+    opacity: 0;
+    transform: translateX(100px)
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0)
+  }
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px)
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0)
+  }
+}
+
+
+
+
+
+
+
+/*-------------------about---------------------*/
+
+.about-out {
+
+  background: url("../images/wavegrid.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  color: #383838;
+
+}
+.about-in {
+
+  width: 70%;
+  margin: auto;
+  background: transparent;
+}
+
+.about-in h2 {
+  animation: none;
+
+}
+
+.about {
+  text-align: center;
+  text-transform: lowercase;
+  color: #383838;
+  font-weight: 500;
+  text-shadow: none;
+
+}
+
+.circular-square {
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.me {
+  width: 70%;
+  margin: auto;
+  border-bottom: 3px solid #b22222;
+  padding: 20px 0 50px 0;
+}
+
+
+.me p {
+  font-size: 1.20em;
+  line-height: 1.4em;
+  font-family: 'Raleway', sans-serif;
+  padding: 10px 30px;
+  text-indent: 3.5em;
+}
+
+.skills {
+  width: 70%;
+  margin: auto;
+  border-bottom: 3px solid #b22222;
+  padding: 20px 0 50px 0;
+  text-align: center;
+}
+
+.skills p {
+
+  font-size: 1.2em;
+  line-height: 1.4em;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.working-on {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  border-bottom: 3px solid #b22222;
+  padding: 20px 0 50px 0;
+}
+
+.working-on p {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  font-family: 'Raleway', sans-serif;
+
+
+
+
+}
+
+.contact {
+  text-align: center;
+  padding: 20px 0 50px 0;
+}
+.contact h4{
+  font-size:1.35em;
+  color:#383838;
+  
+
+
+
+}
+
+.contact p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+
+
+
+
+}
+
+.arrow {
+  width: 10%;
+  margin: 0 45%;
+
+  padding-bottom: 40px;
+}
+
+.arrow:hover {
+  opacity: .5;
+}
+
+/*------------------------projects-----------------*/
+
+.projects-out {
+
+  background: url("../images/wavegrid.png");
+  background-repeat: repeat;
+   background-attachment: fixed;
+  color: #383838;
+text-align: center;
+}
+
+.projects-in {
+  width: 60%;
+  margin: 0 20%;
+
+}
+.head p{
+  padding-bottom: 40px;
+}
+
+.projects-in h2 {
+  text-align: center;
+
+}
+
+
+
+.projects-in p {
+
+  font-size: 1.4em;
+  line-height: 1.2em;
+  font-family: 'Raleway', sans-serif;
+  width: 80%;
+  margin: 0 10%;
+
+}
+
+.paragraph {
+  text-align: left;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+h3 {
+
+  font-size: 1.75em;
+  font-weight: lighter;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: none;
+
+  color: #141414;
+}
+
+h4 {
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  font-size: 1.4em;
+  line-height: 1.0em;
+  text-transform: uppercase;
+  color: #141414
+}
+
+.monkaa,
+.api,
+.about-me,
+.isud,
+.art,
+.head {
+  border-bottom: 2px solid #b22222;
+  width: 90%;
+  margin: 0 5%;
+}
+.tmi{
+  width: 90%;
+  margin: 0 5%;
+  
+}
+
+.btn-group button {
+  background-color: #141414;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  cursor: pointer;
+  margin: 20px 5px;
+  font-family: sans-serif;
+}
+
+
+.list {
+  width: 50%;
+  margin: 0 25%;
+  text-align: left;
+  list-style: inside;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+
+.btn-group button:hover {
+  background-color: #383838;
+  color: #b22222;
+}
+
+.up {
+  width: 3%;
+  float: inherit;
+  clear: left;
+  padding-bottom: 20px;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+/*-------------------footer------------------*/
+
+footer {
+  background: url("../images/seamless_paper_texture.png");
+  background-repeat: repeat;
+  color: #141414;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .85em;
+  line-height: 1.2em;
+  padding: 2px;
+
+
+}
+
+
+.icon-bar {
+  padding-bottom: 10px;
+  font-size: 1.25em;
+}
+
+.icon-bar01 {
+  padding: 10px 0 0 0;
+  font-size: 1.25em;
+
+}
+
+.copy {
+  background-color: aqua;
+  width: 100%;
+  bottom: 0;
+}
+
+.fa {
+
+  color: #141414;
+}
+
+.fa:hover {
+  color: #b22222;
+}
+
+h1 {
+  padding-top: 50px;
+  font-size: 3.60em;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  text-transform: none;
+
+
+}
+
+h2 {
+  font-size: 2.25em;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  text-transform: lowercase;
+  text-align: left;
+  padding-bottom: 30px;
+
+}
+
+/*--------------------------------------------small phones---------------------*/
+
+@media screen and (max-width: 600px) {
+  .menu li a {
+    font-size: 13px;
+  }
+}
+
+/*--------------------------------------------phones and small tablets---------*/
+
+@media only screen and (max-width: 768px) {
+  .toggle {
+    clear: both;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    height: 35px;
+    color: #141414;
+    background: #dbdbdb;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all .1s linear;
+  }
+  .toggle:hover {
+    background: #cecece;
+    /**gray**/
+  }
+  #checkbox:checked + label .demo li {
+    opacity: 1;
+    visibility: visible;
+    transition: all .7s linear;
+  }
+
+  #checkbox:checked + label .demo {
+    height: 200px;
+  }
+  .menu {
+    border-radius: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 0px;
+    transition: height .3s linear;
+    background-color: #dbdbdb;
+  }
+  .menu li {
+    display: flex;
+    /* magic */
+    align-self: left;
+    width: 95%;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .menu li a {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid brown;
+    text-decoration: none;
+    color: #262626;
+    padding-left: 10px;
+    font-size: 1.0em;
+    text-align: left;
+  }
+  .name {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+
+  }
+  .home-in {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+  }
+  .port {
+    width: 100%;
+  }
+  h1 {
+    font-size: 2.60em;
+    padding-top: 75px;
+    text-align: center
+  }
+  h2 {
+    text-align: center;
+    padding-left: 20px;
+    font-size: 1.75em;
+    line-height: 1.2em;
+
+  }
+  .sub-heading {
+
+    border-left: none;
+  }
+
+  .btn {
+    padding-left: 0;
+
+  }
+  .butt {
+
+    font-size: 1.2em;
+    width: 90%;
+    margin: 0 auto 20px auto;
+    outline: 1px solid white;
+
+
+  }
+  .butt:hover {
+    background-color: #141414;
+    width: 90%;
+    transition-duration: .6s;
+  }
+  .butt a:hover {
+    text-transform: none;
+
+  }
+  .column {
+    width: 94%;
+    margin: 0 3% 1% 3%;
+
+  }
+  .about-in {
+    width: 100%;
+
+  }
+  .about p {
+    font-size: 1.0em;
+    line-height: 1.2em;
+  }
+  .arrow {
+    width: 30%;
+    margin: 0 35%;
+  }
+  .row {
+
+    padding: 5px;
+  }
+  .btn-1 {
+    width: 100%;
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+
+  .projects-in {
+    width: 100%;
+    margin: 0;
+  }
+  .list {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    font-family: 'Raleway', sans-serif;
+  }
+
+
+
+
+  /*-------------------------------------------------Laptops---------*/
+  @media only screen and (min-width: 992px) {
+    .name {
+      width: 14%;
+      margin: 0 43%;
+    }
+    .butt {
+      width: 15%;
+      margin: 0 auto 30px auto;
+    }
+    .about-in{
+      width:85%;
+      margin:auto;
+    }
+
+  }
+
+  /*-----------------------------------------------desktop----------*/
+  @media only screen and (min-width: 1200px) {
+    .name {
+      width: 10%;
+      margin: 0 45%;
+    }
+    .butt {
+      width: 10%;
+      margin: 0 auto 50px auto;
+
+
+    }
+    
+
+}
