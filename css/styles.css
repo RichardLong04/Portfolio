@@ -9,16 +9,14 @@ header {
   background: url("../images/seamless_paper_texture.png");
   position: fixed;
   top: 0;
-
-
   overflow: hidden;
-
-  text-align:center;
+  text-align: center;
+  border-bottom: 1px solid #141414;
 
 }
 
 .name {
-  padding-top:10px;
+  padding-top: 10px;
   margin: 0 43%;
 }
 
@@ -61,25 +59,24 @@ li a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items:center;
+  align-items: center;
   list-style-type: none;
   background-color: none;
   border-radius: 2px;
 }
 
 .home-out {
-background-image: url("../images/bg.png");
+  background-image: url("../images/bg.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size:cover;
+  background-size: cover;
   background-attachment: fixed;
-  
   width: 100%;
 
 }
 
 .home-in {
-  width: 60%;
+  width: 35%;
   margin: auto;
   text-align: left;
   padding-top: 0px;
@@ -88,35 +85,39 @@ background-image: url("../images/bg.png");
 .heading {
   padding-bottom: 20px;
   text-align: left;
-  padding-top:60px;
+  padding-top: 60px;
 
 
 }
 
- h1 {
-  color: #141414;
-  text-shadow: 1px 1px 2px whitesmoke;
-  text-transform: none;
+h1 {
+  padding-top: 50px;
   padding-left: 50px;
+  font-size: 3.60em;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  color: #141414;
+  text-transform: none;
  
-
-
-
 }
 
 .sub-heading h2 {
-  padding-left: 50px;
   color: #141414;
-  text-shadow: 1px 1px 2px whitesmoke;
-  text-transform: lowercase;
-  animation: slide 1.4s ease-in;
+  padding-left: 50px;
+  padding-bottom: 30px;
+  font-size: 2.25em;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
 
+  text-transform: lowercase;
+  text-align: left;
+  animation: slide 1.4s ease-in;
 }
 
 .sub-heading {
-  
+
   animation: slide 1.5s ease-in;
-  border-left: 2px solid #b22222;
+  border-left: 3px solid #b22222;
   margin-bottom: 140px;
 
 }
@@ -124,7 +125,7 @@ background-image: url("../images/bg.png");
 @keyframes rise {
   0% {
     opacity: 0;
-    transform: translateX(100px)
+    transform: translateX(50px)
   }
   100% {
     opacity: 1;
@@ -135,7 +136,7 @@ background-image: url("../images/bg.png");
 @keyframes slide {
   0% {
     opacity: 0;
-    transform: translateX(-100px)
+    transform: translateX(-50px)
   }
   100% {
     opacity: 1;
@@ -159,6 +160,7 @@ background-image: url("../images/bg.png");
   color: #383838;
 
 }
+
 .about-in {
 
   width: 70%;
@@ -168,6 +170,7 @@ background-image: url("../images/bg.png");
 
 .about-in h2 {
   animation: none;
+  font-size: 1.6em;
 
 }
 
@@ -177,8 +180,9 @@ background-image: url("../images/bg.png");
   color: #383838;
   font-weight: 500;
   text-shadow: none;
-
+  font-family: 'Montserrat', sans-serif;
 }
+
 
 .circular-square {
   border-top-left-radius: 50% 50%;
@@ -194,7 +198,7 @@ background-image: url("../images/bg.png");
 .me {
   width: 70%;
   margin: auto;
-  border-bottom: 3px solid #b22222;
+  border-bottom: 4px solid #b22222;
   padding: 20px 0 50px 0;
 }
 
@@ -210,7 +214,7 @@ background-image: url("../images/bg.png");
 .skills {
   width: 70%;
   margin: auto;
-  border-bottom: 3px solid #b22222;
+  border-bottom: 4px solid #b22222;
   padding: 20px 0 50px 0;
   text-align: center;
 }
@@ -227,7 +231,7 @@ background-image: url("../images/bg.png");
   text-align: center;
   width: 70%;
   margin: auto;
-  border-bottom: 3px solid #b22222;
+  border-bottom: 4px solid #b22222;
   padding: 20px 0 50px 0;
 }
 
@@ -245,10 +249,11 @@ background-image: url("../images/bg.png");
   text-align: center;
   padding: 20px 0 50px 0;
 }
-.contact h4{
-  font-size:1.35em;
-  color:#383838;
-  
+
+.contact h4 {
+  font-size: 1.35em;
+  color: #383838;
+
 
 
 
@@ -282,9 +287,9 @@ background-image: url("../images/bg.png");
 
   background: url("../images/wavegrid.png");
   background-repeat: repeat;
-   background-attachment: fixed;
+  background-attachment: fixed;
   color: #383838;
-text-align: center;
+  text-align: center;
 }
 
 .projects-in {
@@ -292,7 +297,9 @@ text-align: center;
   margin: 0 20%;
 
 }
-.head p{
+
+
+.head p {
   padding-bottom: 40px;
 }
 
@@ -347,14 +354,15 @@ h4 {
 .isud,
 .art,
 .head {
-  border-bottom: 2px solid #b22222;
+  border-bottom: 4px solid #b22222;
   width: 90%;
   margin: 0 5%;
 }
-.tmi{
+
+.tmi {
   width: 90%;
   margin: 0 5%;
-  
+
 }
 
 .btn-group button {
@@ -408,6 +416,7 @@ footer {
   font-size: .85em;
   line-height: 1.2em;
   padding: 2px;
+  border-top: 1px solid #141414;
 
 
 }
@@ -439,26 +448,9 @@ footer {
   color: #b22222;
 }
 
-h1 {
-  padding-top: 50px;
-  font-size: 3.60em;
-  font-weight: 900;
-  font-family: 'Montserrat', sans-serif;
-  color: #333;
-  text-transform: none;
 
 
-}
 
-h2 {
-  font-size: 2.25em;
-  font-family: 'Montserrat', sans-serif;
-  color: #333;
-  text-transform: lowercase;
-  text-align: left;
-  padding-bottom: 30px;
-
-}
 
 /*--------------------------------------------small phones---------------------*/
 
@@ -538,6 +530,9 @@ h2 {
     width: 95%;
     margin: auto;
     text-align: center;
+  }
+  .column {
+    width: 100%;
   }
   .port {
     width: 100%;
@@ -634,9 +629,9 @@ h2 {
       width: 15%;
       margin: 0 auto 30px auto;
     }
-    .about-in{
-      width:85%;
-      margin:auto;
+    .about-in {
+      width: 85%;
+      margin: auto;
     }
 
   }
@@ -653,6 +648,6 @@ h2 {
 
 
     }
-    
 
-}
+
+  }
